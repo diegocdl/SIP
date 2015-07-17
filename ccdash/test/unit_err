@@ -1,0 +1,7 @@
+#!/bin/sh
+
+. ./test.cfg
+
+../ccdash.py test 'Unit test 2' './echo_false The test has failed' -w . -U $CDASH_SUBMIT_URL -S $SITE_NAME -T $CDASH_BUILD_STAMP -B $BUILD_NAME -G $CDASH_GROUP -o out/unit_err.xml $*
+
+#-vvv

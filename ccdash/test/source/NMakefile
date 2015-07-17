@@ -1,0 +1,11 @@
+success:
+	cl /c warn.c
+warn:
+	cl /c /W4 warn.c 
+	
+err:
+	cl /c err.c
+
+clean:
+	del *.obj
+

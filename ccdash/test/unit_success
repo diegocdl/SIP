@@ -1,0 +1,6 @@
+#!/bin/sh
+
+. ./test.cfg
+
+../ccdash.py test 'Unit test 1' 'echo The test has been successful' -w . -U $CDASH_SUBMIT_URL -S $SITE_NAME -T $CDASH_BUILD_STAMP -B $BUILD_NAME -G $CDASH_GROUP -o out/unit_success.xml $*
+

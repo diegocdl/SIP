@@ -1,0 +1,6 @@
+#!/bin/bash
+
+. ./test.cfg
+
+../ccdash.py update -U $CDASH_SUBMIT_URL -S $SITE_NAME -T $CDASH_BUILD_STAMP -B $BUILD_NAME -G $CDASH_GROUP -o out/update.xml $*
+

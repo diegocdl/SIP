@@ -1,0 +1,6 @@
+#!/bin/sh
+
+. ./test.cfg
+
+../ccdash.py build "make -C source warn" -U $CDASH_SUBMIT_URL -S $SITE_NAME -T $CDASH_BUILD_STAMP -B $BUILD_NAME -G $CDASH_GROUP -o out/build_warn.xml $* 
+

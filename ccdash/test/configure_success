@@ -1,0 +1,9 @@
+#!/bin/sh
+
+. ./test.cfg
+
+CONFIGURE_CMD="echo configure script has been successful.."
+
+../ccdash.py configure "$CONFIGURE_CMD" -U $CDASH_SUBMIT_URL -S $SITE_NAME -T $CDASH_BUILD_STAMP -B $BUILD_NAME -G $CDASH_GROUP -o out/configure_success.xml $*
+
+#-T -vvv
