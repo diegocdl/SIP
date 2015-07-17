@@ -32,7 +32,7 @@ def test_func(t):
 	# Alice making call 
 	###### step 1 ######
 	alice.send("m")
-	alice.send("<sip:bob@192.168.1.17>")
+	alice.send("<sip:bob@10.132.210.202>")
 	#alice.send("<sip:bob@10.0.1.28>")
 	alice.expect(const.STATE_CALLING)
 	
